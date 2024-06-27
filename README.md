@@ -33,7 +33,7 @@ The packagist job created for your update.
 ## Example usage
 
 ```yaml
-uses: wscourge/packagist-publish@v1.0
+uses: wscourge/gha-packagist-publish@v1.0
 with:
   username: "your-username"
   api_token: ${{ secrets.packagist_token }}
