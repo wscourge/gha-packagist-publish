@@ -7,13 +7,13 @@
   "scripts": {
     "build": "ncc build src/index.js --license licenses.txt"
   },
-  "homepage": "https://github.com/wscourge/gha-packagist-update",
+  "homepage": "https://github.com/wscourge/gha-packagist-publish",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wscourge/gha-packagist-update.git"
+    "url": "git+https://github.com/wscourge/gha-packagist-publish.git"
   },
   "bugs": {
-    "url": "https://github.com/wscourge/gha-packagist-update/issues"
+    "url": "https://github.com/wscourge/gha-packagist-publish/issues"
   },
   "license": "MIT",
   "dependencies": {
