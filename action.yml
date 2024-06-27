@@ -1,9 +1,9 @@
-name: 'Packagist Update'
-description: 'Update your PHP package on Packagist'
-author: mnavarrocarter
+name: 'Packagist Publish'
+description: 'Publish your PHP package on Packagist'
+author: wscourge
 branding:
   icon: 'package'
-  color: 'orange'
+  color: 'gray-dark'
 inputs:
   domain:
     description: 'The packagist domain to call.'
@@ -19,9 +19,13 @@ inputs:
     description: 'Your package name (vendor/name). If not present, it takes it from composer.json'
     required: false
     default: ''
+  package_base_url:
+    description: 'The base url of your package. Defaults to https://packagist.org/packages or set to https://github.com for github packages.'
+    required: false
+    default: 'https://packagist.org/packages'
 outputs:
   job_id:
-    description: 'The job id created by Packagist'
+    description: 'The job id created by Packagist, if update was successful. (Not set for first creation)'
 runs:
   using: 'node16'
   main: 'dist/index.js'
